@@ -23,3 +23,9 @@ A lightweight DevOps-style monitoring dashboard built using Python and Streamlit
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
+```
+
+### With Docker
+```bash
+docker build -t server-monitor .
+docker run -p 8501:8501 server-monitor
